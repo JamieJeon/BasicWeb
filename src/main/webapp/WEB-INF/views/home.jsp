@@ -3,15 +3,17 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Home</title>
+    <title>Home</title>
 </head>
 <body>
 <h1>
-	Hello world!  
+    Hello world!
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
 
-<p><a href="${pageContext.request.contextPath}/kcp_start">휴대폰 인증하기</a></p>
+<c:forEach items="${sample}" var="list">
+    <p>ID : ${list.id} / PW : ${list.pw}</p>
+</c:forEach>
 </body>
 </html>
