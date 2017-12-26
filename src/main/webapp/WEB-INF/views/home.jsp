@@ -10,7 +10,7 @@
     Hello world!222222
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<P>  The time on the server is ${serverTime}!!!</P>
 
 <c:forEach items="${sample}" var="list">
     <p>ID : ${list.id} / PW : ${list.pw}</p>
