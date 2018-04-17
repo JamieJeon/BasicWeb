@@ -10,7 +10,7 @@
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="${mysql.driverClass}"/>
-        <property name="url" value="${mysql.url}"/>
+        <property name="url" value="${mysql.url}/itskorea"/>
         <property name="username" value="${mysql.UserName}"/>
         <property name="password" value="${mysql.Password}"/>
     </bean>

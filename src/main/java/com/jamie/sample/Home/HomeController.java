@@ -1,6 +1,6 @@
-package com.jamie.sample;
+package com.jamie.sample.Home;
 
-import com.jamie.sample.TEST.SAMPLE;
+import com.jamie.sample.Home.Model.SAMPLE;
 import org.apache.ibatis.session.SqlSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,7 +40,7 @@ public class HomeController {
 
         model.addAttribute("serverTime", formattedDate );
 
-        List<SAMPLE> sample = session.selectList("com.jamie.sample.TEST.SampleMapper.TEST");
+        List<SAMPLE> sample = session.selectList("com.jamie.sample.Test.SampleMapper.GET_USER");
         model.addAttribute("sample", sample );
 
         return "home";

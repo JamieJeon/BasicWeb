@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jamie.sample.TEST.SampleMapper">
+<mapper namespace="com.jamie.sample.Test.SampleMapper">
 
-    <select id="TEST" resultType="SAMPLE">
+    <select id="GET_USER" resultType="com.jamie.sample.Home.Model.SAMPLE">
         SELECT * FROM `SUSER`
     </select>
 </mapper>
